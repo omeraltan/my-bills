@@ -1,11 +1,17 @@
 package com.bills.boot.dto;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
 import java.util.Date;
 
 public class FaturaTipDTO {
     private Long id;
+    @NotBlank(message = "{error.validation.empty.name}")
     private String name;
+    @NotBlank(message = "{error.validation.empty.description}")
     private String description;
+    @NotNull(message = "{error.validation.empty.date}")
     private Date needDate;
     private boolean isActive;
 
