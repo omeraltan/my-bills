@@ -5,3 +5,7 @@ spring:
     username: faturalarim
     password:
     url: jdbc:h2:mem:faturalarimdb
+
+  messages:
+    encoding: UTF-8
+

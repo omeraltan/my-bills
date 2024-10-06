@@ -14,13 +14,13 @@ public class FaturaTip {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @NotBlank(message = "İsim boş olamaz.")
+    @NotBlank(message = "{error.validation.empty.name}")
     private String name;
 
-    @NotBlank(message = "Açıklama boş olamaz.")
+    @NotBlank(message = "{error.validation.empty.description}")
     private String description;
 
-    @NotNull(message = "Gerekli tarih boş olamaz.")
+    @NotNull(message = "{error.validation.empty.date}")
     @Temporal(TemporalType.TIMESTAMP)
     private Date needDate;
 
