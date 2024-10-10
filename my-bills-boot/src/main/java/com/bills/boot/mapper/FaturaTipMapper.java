@@ -37,4 +37,13 @@ public class FaturaTipMapper {
         return faturaTip;
     }
 
+    public void updateEntityFromDTO(FaturaTipDTO faturaTipDTO, FaturaTip existingFaturaTip) {
+        if (faturaTipDTO == null || existingFaturaTip == null) {
+            return;
+        }
+        existingFaturaTip.setName(faturaTipDTO.getName());
+        existingFaturaTip.setDescription(faturaTipDTO.getDescription());
+        existingFaturaTip.setNeedDate(faturaTipDTO.getNeedDate());
+        existingFaturaTip.setActive(faturaTipDTO.isActive());
+    }
 }
