@@ -23,7 +23,7 @@ public class FaturaTipMapper {
     }
 
     // DTO'dan Entity'ye dönüşüm
-    public static FaturaTip toEntity(FaturaTipDTO dto) {
+    public FaturaTip toEntity(FaturaTipDTO dto) {
         if (dto == null) {
             return null;
         }
