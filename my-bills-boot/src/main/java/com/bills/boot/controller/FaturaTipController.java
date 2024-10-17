@@ -17,6 +17,7 @@ import static com.bills.boot.utility.FaturaTipUrls.*;
 
 @RestController
 @RequestMapping(FATURA_TIP_PROFILE)
+@CrossOrigin(origins = "http://localhost:3000")
 @Tag(name = "operation.tag.name", description = "operation.tag.description")
 public class FaturaTipController {
 
